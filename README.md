@@ -1,45 +1,69 @@
-# CRUD de Usuários - PHP + MySQL
 
-Sistema simples para gerenciamento de usuários com operações básicas de cadastro.
+# 📋 CRUD de Usuários
 
-## 🛠 Como Usar
+Sistema completo de cadastro de usuários com todas as operações CRUD, desenvolvido com stack básica e boas práticas de programação.
+
+
+## 🛠 Stack Tecnológica
+
+**Frontend**  
+| Tecnologia | Função |
+|------------|--------|
+| HTML5 | Estrutura semântica |
+| Bootstrap 5 | Estilização responsiva |
+| JavaScript | Interações dinâmicas |
+
+**Backend**  
+| Tecnologia | Função |
+|------------|--------|
+| PHP 8+ | Lógica de negócio |
+| MySQL 8+ | Armazenamento de dados |
+| PDO | Conexão segura com banco |
+
+**Ferramentas**  
+| Tecnologia | Função |
+|------------|--------|
+| Composer | Gerenciamento de dependências |
+| XAMPP | Ambiente de desenvolvimento |
+
+---
+
+## 🚀 Instalação Passo a Passo
 
 ### Pré-requisitos
-- XAMPP/WAMP/MAMP instalado
-- PHP 7.4+
-- MySQL 5.7+
-- Navegador moderno
+- Servidor web (XAMPP/WAMP/MAMP)
+- PHP ≥ 8.0
+- MySQL ≥ 8.0
+- Git (opcional)
 
-### Passo a Passo
-
-1. **Clonar Repositório**
+### Configuração Inicial
+1. **Clonar repositório**
 ```bash
-git clone https://github.com/seu-usuario/crud-php.git
-cd crud-php
-Configurar Banco de Dados
+git clone https://github.com/seu-usuario/crud-completo.git
+cd crud-completo
+Banco de Dados
 
 bash
 Copy
 mysql -u root -p < database.sql
 Configurar Ambiente
-Edite o arquivo .env na raiz do projeto:
 
-env
+bash
 Copy
-DB_HOST=localhost
-DB_NAME=crud_usuarios
-DB_USER=root
-DB_PASS=
-Iniciar Servidor PHP
+cp .env.example .env
+# Edite com suas credenciais:
+nano .env
+Dependências PHP
+
+bash
+Copy
+composer install
+Iniciar Servidor
 
 bash
 Copy
 php -S localhost:8000
-Acessar o Sistema
-Abra no navegador:
+Acessar Sistema
+
+Copy
 http://localhost:8000
-
-⚙️ Dica Rápida
-Use admin@exemplo.com / senha123 para testar login (se implementado)
-
-Para reiniciar dados: execute database.sql novamente
