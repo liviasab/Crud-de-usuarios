@@ -1,8 +1,7 @@
 
 # 📋 CRUD de Usuários
 
-Sistema completo de cadastro de usuários com todas as operações CRUD, desenvolvido com stack básica e boas práticas de programação.
-
+Sistema completo de cadastro de usuários com todas as operações CRUD.
 
 ## 🛠 Stack Tecnológica
 
